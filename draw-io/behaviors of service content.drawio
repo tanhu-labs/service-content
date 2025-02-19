@@ -1,0 +1,145 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0" version="26.0.14">
+  <diagram name="Page-1" id="1795E4FmXhNEjwSdAtzC">
+    <mxGraphModel dx="989" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-2" value="&lt;font style=&quot;font-size: 40px;&quot;&gt;&lt;b&gt;Behaviors of service content&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="60" width="610" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-5" value="user" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="290" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-10" value="service-content" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="470" y="190" width="300" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-11" value="CreateContentRequest" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="180" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-12" value="&lt;div&gt;+ username&lt;/div&gt;&lt;div&gt;+ text&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="fvmiOmB98l_UNaLvc_Y1-11">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-38" value="CreateContentResponse" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="420" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-39" value="&lt;div&gt;+ url&lt;/div&gt;&lt;div&gt;+ creationTime&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="fvmiOmB98l_UNaLvc_Y1-38">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-40" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="320" as="sourcePoint" />
+            <mxPoint x="440" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-41" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="350" as="sourcePoint" />
+            <mxPoint x="90" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-42" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;&lt;b&gt;1. Create Content Behavior&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="25" y="130" width="375" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-52" value="user" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="35" y="770" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-53" value="service-content" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="465" y="670" width="300" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-54" value="ReadContentRequest" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="660" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-55" value="&lt;div&gt;+ username&lt;/div&gt;&lt;div&gt;+ url&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="fvmiOmB98l_UNaLvc_Y1-54">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-56" value="ReadContentResponse" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="900" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-57" value="+ text" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="fvmiOmB98l_UNaLvc_Y1-56">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-58" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="85" y="800" as="sourcePoint" />
+            <mxPoint x="435" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-59" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="435" y="830" as="sourcePoint" />
+            <mxPoint x="85" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-60" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;&lt;b&gt;2. Read Content Behavior&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="610" width="375" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-61" value="user" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="25" y="1290" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-62" value="service-content" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="455" y="1190" width="300" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-63" value="UpdateContentRequest" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="1180" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-64" value="&lt;div&gt;+ username&lt;/div&gt;&lt;div&gt;+ url&lt;/div&gt;&lt;div&gt;+ text&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="fvmiOmB98l_UNaLvc_Y1-63">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-65" value="UpdateContentResponse" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="1420" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-66" value="&lt;div&gt;+ url&lt;/div&gt;&lt;div&gt;+ creationTime&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="fvmiOmB98l_UNaLvc_Y1-65">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-67" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="75" y="1320" as="sourcePoint" />
+            <mxPoint x="425" y="1320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-68" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="1350" as="sourcePoint" />
+            <mxPoint x="75" y="1350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-69" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;&lt;b&gt;3. Update Content Behavior&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1130" width="375" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-70" value="user" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="25" y="1810" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-71" value="service-content" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="455" y="1710" width="300" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-72" value="DeleteContentRequest" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="1700" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-73" value="&lt;div&gt;+ username&lt;/div&gt;&lt;div&gt;+ url&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="fvmiOmB98l_UNaLvc_Y1-72">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-74" value="DeleteContentResponse" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="1940" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-75" value="+ text" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="fvmiOmB98l_UNaLvc_Y1-74">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-76" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="75" y="1840" as="sourcePoint" />
+            <mxPoint x="425" y="1840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-77" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="1870" as="sourcePoint" />
+            <mxPoint x="75" y="1870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fvmiOmB98l_UNaLvc_Y1-78" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;&lt;b&gt;4. Delete Content Behavior&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1650" width="375" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
