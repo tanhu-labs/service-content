@@ -1,67 +1,31 @@
-## How to Use This Spring Boot CRUD App & Draw.io
+# Service-Content Spring Boot Microservice
 
-This repository contains resources for both **a Spring Boot CRUD app built with Test-Driven Development (TDD) and Integration Testing** as well as **Draw.io diagramming tools** used in the project documentation.
+This is a Spring Boot microservice project called `service-content`. Below is an overview of the architectural layers, testing strategy, and YouTube video tutorials explaining the development process.
 
----  
+## Conceptual Design
+The conceptual design of the project was prepared using [draw.io](https://app.diagrams.net/). You can check out the video explaining the design process here:  
+[Service-Content Conceptual Design Youtube Video](https://youtu.be/esIHPXQXFBE)
 
-## Spring Boot CRUD App | TDD & Integration Testing
+## Project Layers
 
-This project demonstrates a **CRUD app** developed using **Test-Driven Development (TDD) in Java with Spring Boot**. It includes a persistence layer for the `service-content` microservice and ensures reliability through **integration testing in Spring Boot** with an H2 in-memory database.
+The project is designed using a layered architecture consisting of three main layers:
 
-### Video Tutorial
+### 1. Persistence Layer
+The persistence layer handles the interaction with the database. It uses an H2 database for integration testing. In this layer, we store and retrieve data required by the application.  
+For more details, watch the video explaining the persistence layer and its integration tests here:  
+[Persistence Layer & Integration Testing Youtube Video](https://youtu.be/UjsYXY4i99k)
 
-Watch my detailed youtube video explaining the project here:
+### 2. Domain Layer
+The domain layer contains the core business logic of the application. It defines the main models, entities, and operations necessary to carry out the business requirements. The logic is encapsulated in this layer and is tested using unit tests.  
+To avoid the complexities of mocking, a fake adapter is used in place of real implementations to simplify testing and ensure that the domain logic is working correctly.  
+You can watch the video explaining the development and unit tests in the domain layer here:  
+[Domain Layer & Unit Testing Youtube Video](https://youtu.be/W0rDlPMx5lI)
 
-[Watch the video](https://youtu.be/esIHPXQXFBE)
+### 3. Application Layer
+to be develop
 
-In the video, I cover:
-- **TDD principles in Spring Boot**
-- **How to implement and test a persistence layer**
-- **Integration testing with H2 database**
-- **Best practices for writing clean and maintainable code**
+## TDD Approach
+This project follows the Test-Driven Development (TDD) methodology, ensuring that each component is tested thoroughly before implementation. The development process focuses on writing tests first, then building the required functionality, and finally refactoring the code to improve quality.
 
-### Access the Code
-
-The complete source code is available in this repository. Feel free to explore, modify, and use it for your own projects.
-
-### Why Use This Approach?
-
-- **Test-Driven Development (TDD)** ensures better code quality and maintainability.
-- **Integration Testing** verifies database interactions using an H2 in-memory database.
-- **Spring Boot CRUD App** provides a structured example of RESTful API development.
-
----  
-
-## How to Use Draw.io
-
-**Draw.io** is a powerful and user-friendly diagramming tool used in this project for documenting architecture and workflows. It allows you to create flowcharts, UML diagrams, network diagrams, and more.
-
-### Video Tutorial
-
-For a detailed guide on Draw.io, watch my tutorial:
-
-[Watch the video](https://youtu.be/esIHPXQXFBE)
-
-This youtube video covers essential features, tips, and best practices for effective diagramming.
-
-### Access the Diagrams
-
-The diagrams used in the project are available in this repository. You can download, modify, and use them as needed.
-
-### Why Use Draw.io?
-
-- **Free and Open-Source**
-- **Easy to Use**
-- **Cloud and Local Storage Options**
-- **Seamless Integration with GitHub, Jira, and Confluence**
-- **Real-time Collaboration Features**
-
----  
-
-## Contribute
-
-If you find this repository helpful, consider giving it a star ⭐! Contributions are welcome—feel free to submit pull requests with improvements, additional test cases, or new diagrams.
-
-## Contact
-
-For any questions or suggestions, reach out via my YouTube channel or open an issue in this repository. Happy coding and diagramming! 🚀
+## Conclusion
+This project aims to demonstrate how to structure a Spring Boot microservice using a layered architecture, TDD, and integration/unit tests. Through the YouTube videos, I explain each step of the development process, including designing, testing, and implementing business logic. 
