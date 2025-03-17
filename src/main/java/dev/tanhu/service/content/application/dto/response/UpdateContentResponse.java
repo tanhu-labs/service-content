@@ -1,7 +1,5 @@
 package dev.tanhu.service.content.application.dto.response;
 
-import java.time.ZonedDateTime;
-
 public class UpdateContentResponse {
 
     private String url;

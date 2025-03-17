@@ -73,6 +73,8 @@ class ContentPersistenceServiceTest {
         assertThat(answer.getCreationTime()).isEqualTo(ZonedDateTime.parse(entity.getCreationTime()));
     }
 
+
+
     @Test
     void shouldThrowException_whenReceivedUnknownUrl() {
         //given
@@ -118,6 +120,22 @@ class ContentPersistenceServiceTest {
         assertThat(answer.getCreationTime()).isEqualTo(entity.getCreationTime());
     }
 
+
+    @Test
+    void shouldThrowException_whenUpdateContentReceivedUnknownUrl() {
+        //given
+        Content content = new Content();
+        content.setUrl("test_unknown_url");
+
+        //when
+        Throwable answer = assertThrows(Throwable.class, () -> persistenceService.updateContent(content));
+
+        //then
+        assertThat(answer).isNotNull();
+        assertThat(answer.getMessage()).isEqualTo("unknown.url");
+
+    }
+
     @Test
     void shouldDeleteContent_whenReceivedExistingUrl() {
         //before
@@ -140,5 +158,20 @@ class ContentPersistenceServiceTest {
         //then
         Optional<ContentEntity> answer = contentRepository.findByUrl(content.getUrl());
         assertThat(answer).isEqualTo(Optional.empty());
+    }
+
+    @Test
+    void shouldThrowException_whenDeleteContentReceivedUnknownUrl() {
+        //given
+        Content content = new Content();
+        content.setUrl("test_unknown_url");
+
+        //when
+        Throwable answer = assertThrows(Throwable.class, () -> persistenceService.deleteContent(content));
+
+        //then
+        assertThat(answer).isNotNull();
+        assertThat(answer.getMessage()).isEqualTo("unknown.url");
+
     }
 }
