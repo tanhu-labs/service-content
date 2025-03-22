@@ -1,0 +1,5 @@
+services:
+  service-content:
+    image: tanhulabs/service-content:latest
+    ports:
+      - 8600:8080

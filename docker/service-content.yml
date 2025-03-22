@@ -1,0 +1,5 @@
+services:
+  service-content:
+    image: service-content:latest
+    ports:
+      - 8500:8080
